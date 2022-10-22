@@ -1,9 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "csv-bibel-tools",
-    "description": "Extension for the website 'csv-bibel.de'.",
-    "host_permissions": ["https://*.csv-bibel.de/*"],
+    "name": "bibelindex-suche",
+    "description": "Extension to search anything on 'bibelindex.de'.",
+    //"host_permissions": ["https://*.csv-bibel.de/*"],
     "version": "1.0",
+    "permissions": ["storage", "tabs", "contextMenus"],
     "action": {
         //"default_icon": {
         //  "16": "assets/ext-icon.png",
@@ -15,12 +16,12 @@
     },
     "background": {
         "service_worker": "background.js"
-    },
-    "permissions": ["storage", "tabs"],
-    "content_scripts": [
-        {
-            "matches": ["https://*.youtube.com/*"],
-            "js": ["contentScript.js"]
-        }
-    ]
+    }
+    
+    //"content_scripts": [
+    //    {
+    //        "matches": ["https://*.youtube.com/*"],
+    //        "js": ["contentScript.js"]
+    //    }
+    //]
 }
