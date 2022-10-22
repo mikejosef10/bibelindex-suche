@@ -22,5 +22,5 @@
             "matches": ["https://*.youtube.com/*"],
             "js": ["contentScript.js"]
         }
-    ],
+    ]
 }
