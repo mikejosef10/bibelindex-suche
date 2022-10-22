@@ -1,10 +1,26 @@
 {
-    // Required
     "manifest_version": 3,
     "name": "csv-bibel-tools",
+    "description": "Extension for the website 'csv-bibel.de'.",
+    "host_permissions": ["https://*.csv-bibel.de/*"],
     "version": "1.0",
-
-    // Recommended
-    "description": "Extension for the website csv-bibel.de. Look up for commentary directly with bibelindex.de."
-    //"icons": {...},
+    "action": {
+        //"default_icon": {
+        //  "16": "assets/ext-icon.png",
+        //  "24": "assets/ext-icon.png",
+        //  "32": "assets/ext-icon.png"
+        //},
+        "default_title": "Markiere den gewünschten Bibel text und gehe mit rechts Klick auf 'Auf bibelindex.de suchen'.",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
 }
