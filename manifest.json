@@ -2,7 +2,6 @@
     "manifest_version": 3,
     "name": "bibelindex-suche",
     "description": "Extension to search anything on 'bibelindex.de'.",
-    //"host_permissions": ["https://*.csv-bibel.de/*"],
     "version": "1.0",
     "permissions": ["storage", "tabs", "contextMenus"],
     "icons": {
@@ -24,11 +23,4 @@
     "background": {
         "service_worker": "background.js"
     }
-    
-    //"content_scripts": [
-    //    {
-    //        "matches": ["https://*.youtube.com/*"],
-    //        "js": ["contentScript.js"]
-    //    }
-    //]
 }
