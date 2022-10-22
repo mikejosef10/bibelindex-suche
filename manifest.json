@@ -5,12 +5,19 @@
     //"host_permissions": ["https://*.csv-bibel.de/*"],
     "version": "1.0",
     "permissions": ["storage", "tabs", "contextMenus"],
+    "icons": {
+        "16": "assets/ext-icon.png",
+        "32": "assets/ext-icon.png",
+        "48": "assets/ext-icon.png",
+        "128": "assets/ext-icon.png"
+    },
     "action": {
-        //"default_icon": {
-        //  "16": "assets/ext-icon.png",
-        //  "24": "assets/ext-icon.png",
-        //  "32": "assets/ext-icon.png"
-        //},
+        "default_icon": {
+            "16": "assets/ext-icon.png",
+            "24": "assets/ext-icon.png",
+            "32": "assets/ext-icon.png",
+            "128": "assets/ext-icon.png"
+        },
         "default_title": "Markiere den gewünschten Bibel text und gehe mit rechts Klick auf 'Auf bibelindex.de suchen'.",
         "default_popup": "popup.html"
     },
