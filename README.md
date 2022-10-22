@@ -1,1 +1,1 @@
-# csv-bibel-tools
+# bibelindex-suche
